@@ -30,6 +30,12 @@ public:
 
   ///* predicted sigma points matrix
   MatrixXd Xsig_pred_;
+  
+  ///* Measurement transformation matrix for the laser
+  MatrixXd H_;
+  
+  ///* Identity matrix
+  MatrixXd I5_;
 
   ///* time when the state is true, in us
   long long time_us_;
